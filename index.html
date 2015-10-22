@@ -3,12 +3,14 @@
   <head>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script>
+    var computerChoice = Math.random();
+    alert(computerChoice);
     var userName = prompt("What is your name puny human?");
 
     var userChoice = prompt("Do you choose rock, paper or scissors?");
 
-    var computerChoice = Math.random();
 
+    console.log(computerChoice);
     if (computerChoice <= 0.33) {
         computerChoice = "rock";
     } else if (computerChoice <= 0.66) {
@@ -23,14 +25,14 @@
           } else if(userChoice ==="rock") {
             if (computerChoice==="scissors") {
 
-                window.alert("Rock wins!");
+                window.alert(userName + " wins!");
           } else {
                 window.alert("Paper wins");
               }
           }
           else if(userChoice==="paper") {
              if(computerChoice ==="rock") {
-                 window.alert("Paper wins!");
+                 window.alert(userName + " wins!");
              } else {
                  window.alert("scissors wins!");
              }
@@ -38,7 +40,7 @@
 
           else if(userChoice==="scissors") {
               if (computerChoice==="rock") {
-                  window.alert("Scissors wins!");
+                  window.alert(userName + " wins!");
               } else {
                   window.alert("scissors wins");
               }
@@ -48,8 +50,10 @@
   </head>
   <body>
     <div class="wrapper">
-      <button class="button" onclick="compare(userChoice, computerChoice);">LETS PLAY RPS!</button>
-      
+      <img src="http://i.kinja-img.com/gawker-media/image/upload/s--sS8W9DN1--/18lqob7kvmzmojpg.jpg" >
+      <button class="button" onclick="compare(userChoice, computerChoice);">Score</button>
+      <button class="button" onclick="location.reload();">Play again!</button>
+
     </div>
   </body>
 

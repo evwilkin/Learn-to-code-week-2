@@ -7,5 +7,14 @@
     top: 50%;
     width: 200px;
     height: 100px;
-    display: inline-block;
+    display: block;
+    margin: 10px auto;
+    font-size: 30px;
+}
+
+img {
+  border: 10px solid black;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
 }
